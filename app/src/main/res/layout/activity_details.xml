@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:background="@drawable/ui_back"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".Details">
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:text="PROFILE"
+        android:textColor="#ff4d88"
+        android:textSize="32sp"
+        android:textStyle="bold" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_margin="20dp"
+        app:cardElevation="8dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="11sp"
+                android:text="Enter Name"
+                android:textColor="@color/black"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"/>
+
+            <EditText
+                android:id="@+id/editText1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#ff4d88"
+                android:textSize="14sp"
+                android:inputType="textPersonName"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="11sp"
+                android:text="Enter First Emergency Contact No."
+                android:textColor="@color/black"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"/>
+
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#ff4d88"
+                android:layout_marginLeft="10dp"
+                android:textSize="14sp"
+                android:layout_marginRight="10dp"
+                android:inputType="textPersonName"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:text="Enter Second Emergency Contact No."
+                android:textColor="@color/black"
+                android:textSize="11sp" />
+
+            <EditText
+                android:id="@+id/editText3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:backgroundTint="#ff4d88"
+                android:textSize="14sp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="40dp"
+                android:inputType="textPersonName"
+                />
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+      <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+          android:layout_marginLeft="25dp"
+          android:layout_marginRight="25dp"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center"
+            android:onClick="addRecord"
+            android:backgroundTint="#ff4d88"
+            android:textColor="@color/white"
+            android:text="Save Details"
+            android:elevation="8dp"
+            android:textSize="16sp" />
+
+</LinearLayout>
+    
+
